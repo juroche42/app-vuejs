@@ -1,7 +1,7 @@
 <script setup>
 
 const menuItems = [
-  { name: 'Accueil', link: '#' },
+  { name: 'Accueil', link: '/' },
   { name: 'Nouveautés', link: '#' },
   { name: 'Homme', link: '#' },
   { name: 'Femme', link: '#' },
