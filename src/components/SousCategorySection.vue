@@ -16,7 +16,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <a href="#" class="block border rounded-2xl overflow-hidden shadow hover:shadow-md transition">
+  <a href="/categoryContent" class="block border rounded-2xl overflow-hidden shadow hover:shadow-md transition">
     <img :src="props.image" :alt="props.title" class="w-full h-48 object-cover">
     <div class="p-4">
       <h3 class="font-semibold text-lg">{{props.title}}</h3>
