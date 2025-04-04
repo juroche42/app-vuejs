@@ -1,7 +1,7 @@
 <script setup>
 
-import FilterSection from '@/components/FilterSection.vue'
-import ProductListSection from '@/components/ProductListSection.vue'
+import FilterSection from '@/components/section/FilterSection.vue'
+import ProductListSection from '@/components/section/ProductListSection.vue'
 </script>
 
 <template>

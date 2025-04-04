@@ -1,6 +1,6 @@
 <script setup>
 
-import SumarizeOrderSection from '@/components/SumarizeOrderSection.vue'
+import SumarizeOrderSection from '@/components/section/SumarizeOrderSection.vue'
 import CheckoutElementCard from '@/components/card/CheckoutElementCard.vue'
 import { computed, ref } from 'vue'
 

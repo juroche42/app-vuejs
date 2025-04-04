@@ -1,6 +1,6 @@
 <script setup>
 
-import InfoSection from '@/components/InfoSection.vue'
+import InfoSection from '@/components/section/InfoSection.vue'
 
 const props = defineProps({
   title: {

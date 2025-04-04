@@ -1,6 +1,6 @@
 <script setup>
-  import HeroSection from '@/components/HeroSection.vue'
-  import PopularSection from '@/components/PopularSection.vue'
+  import HeroSection from '@/components/section/HeroSection.vue'
+  import PopularSection from '@/components/section/PopularSection.vue'
 </script>
 
 <template>
