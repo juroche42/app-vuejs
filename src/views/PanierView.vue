@@ -1,5 +1,6 @@
 <script setup>
 
+import SumarizeOrderSection from '@/components/SumarizeOrderSection.vue'
 </script>
 
 <template>
@@ -20,12 +21,7 @@
           <button class="text-red-500 text-sm hover:underline mt-1">Supprimer</button>
         </div>
       </div>
-
-      <!-- Résumé commande -->
-      <div class="text-right mt-10">
-        <p class="text-lg font-semibold">Total : <span class="text-blue-600">89,99 €</span></p>
-        <button class="mt-4 bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition">Commander</button>
-      </div>
+      <SumarizeOrderSection/>
     </div>
   </main>
 </template>
