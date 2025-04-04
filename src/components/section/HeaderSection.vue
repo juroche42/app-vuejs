@@ -2,10 +2,10 @@
 
 const menuItems = [
   { name: 'Accueil', link: '/' },
-  { name: 'Nouveautés', link: '#' },
+  { name: 'Nouveautés', link: '/categoryContent' },
   { name: 'Homme', link: '/category' },
-  { name: 'Femme', link: '#' },
-  { name: 'Contact', link: '#' },]
+  { name: 'Femme', link: '/category' },
+  { name: 'Contact', link: '/' },]
 
 </script>
 
