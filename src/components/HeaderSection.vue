@@ -3,7 +3,7 @@
 const menuItems = [
   { name: 'Accueil', link: '/' },
   { name: 'Nouveautés', link: '#' },
-  { name: 'Homme', link: '#' },
+  { name: 'Homme', link: '/category' },
   { name: 'Femme', link: '#' },
   { name: 'Contact', link: '#' },]
 
