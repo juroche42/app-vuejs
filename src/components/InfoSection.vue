@@ -1,12 +1,27 @@
 <script setup>
 
+const props = defineProps({
+  title: {
+    type: String,
+    default: 'Produit',
+  },
+  description: {
+    type: String,
+    default: 'Description du produit',
+  },
+  price: {
+    type: Number,
+    default: 0,
+  }
+})
+
 </script>
 
 <template>
   <div>
-    <h2 class="text-3xl font-bold mb-4">Chaussure Cuir Classique</h2>
-    <p class="text-gray-600 mb-4">Idéale pour le bureau ou les grandes occasions.</p>
-    <p class="text-2xl font-bold mb-4">89,99 €</p>
+    <h2 class="text-3xl font-bold mb-4">{{props.title}}</h2>
+    <p class="text-gray-600 mb-4">{{props.description}}</p>
+    <p class="text-2xl font-bold mb-4">{{props.price}} €</p>
 
     <div class="mb-4">
       <label class="block font-medium mb-1">Pointure</label>
