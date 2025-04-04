@@ -17,6 +17,12 @@ const props = defineProps({
     default: '/src/assets/logo.svg',
   },
 })
+
+const emits = defineEmits(['delete-checkout-element'])
+
+function deleteElement() {
+  emits('delete-checkout-element')
+}
 </script>
 
 <template>
@@ -30,7 +36,7 @@ const props = defineProps({
     </div>
     <div class="text-right">
       <p class="font-bold">{{props.price}} €</p>
-      <button class="text-red-500 text-sm hover:underline mt-1">Supprimer</button>
+      <button class="text-red-500 text-sm hover:underline mt-1" @click="deleteElement">Supprimer</button>
     </div>
   </div>
 </template>

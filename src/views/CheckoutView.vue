@@ -2,9 +2,9 @@
 
 import SumarizeOrderSection from '@/components/SumarizeOrderSection.vue'
 import CheckoutElementCard from '@/components/CheckoutElementCard.vue'
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 
-const products = [
+const products = ref([
   {
     title: 'Chaussure',
     price: 100,
@@ -23,15 +23,20 @@ const products = [
     quantity: 1,
     image: '/src/assets/logo.svg',
   },
-]
+])
 
 let totalPrice = computed(() => {
   let total = 0
-  products.forEach(product => {
+  products.value.forEach(product => {
     total += product.price * product.quantity
   })
   return total
 })
+
+function deleteCheckoutElement(index) {
+  products.value.splice(index, 1)
+}
+
 </script>
 
 <template>
@@ -43,6 +48,7 @@ let totalPrice = computed(() => {
                            :price="product.price"
                            :quantity="product.quantity"
                            :image="product.image"
+                           @delete-checkout-element="deleteCheckoutElement(products.indexOf(product))"
       />
       <SumarizeOrderSection :price="totalPrice"/>
     </div>
