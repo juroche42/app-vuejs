@@ -19,6 +19,10 @@ const props = defineProps({
     type: String,
     default: '/src/assets/logo.svg',
   },
+  size: {
+    type: Array,
+    default: () => ['39', '40', '41', '42'],
+  }
 })
 </script>
 
@@ -27,7 +31,7 @@ const props = defineProps({
     <div>
       <img :src="props.image" class="w-full rounded-xl object-cover" alt="Produit">
     </div>
-    <InfoSection :title="props.title" :description="props.description" :price="props.price" />
+    <InfoSection :title="props.title" :description="props.description" :price="props.price" :size="props.size"/>
   </main>
 </template>
 

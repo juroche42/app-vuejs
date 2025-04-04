@@ -12,7 +12,11 @@ const props = defineProps({
   price: {
     type: Number,
     default: 0,
-  }
+  },
+  size: {
+    type: Array,
+    default: () => ['39', '40', '41', '42'],
+  },
 })
 
 </script>
@@ -26,10 +30,7 @@ const props = defineProps({
     <div class="mb-4">
       <label class="block font-medium mb-1">Pointure</label>
       <select class="w-full border px-3 py-2 rounded">
-        <option>39</option>
-        <option>40</option>
-        <option>41</option>
-        <option>42</option>
+        <option v-for="size in props.size" :key="size" :value="size">{{size}}</option>
       </select>
     </div>
 
