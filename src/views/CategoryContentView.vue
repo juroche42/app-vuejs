@@ -1,37 +1,12 @@
 <script setup>
 
+import FilterSection from '@/components/FilterSection.vue'
 </script>
 
 <template>
   <main class="max-w-7xl mx-auto px-4 py-10">
     <div class="flex flex-col md:flex-row gap-8">
-      <!-- Filtres -->
-      <aside class="md:w-1/4">
-        <h2 class="text-lg font-semibold mb-4">Filtres</h2>
-        <div class="space-y-4">
-          <div>
-            <label class="block font-medium mb-1">Genre</label>
-            <select class="w-full border px-3 py-2 rounded">
-              <option>Tous</option>
-              <option>Homme</option>
-              <option>Femme</option>
-            </select>
-          </div>
-          <div>
-            <label class="block font-medium mb-1">Prix</label>
-            <input type="range" min="30" max="200" class="w-full">
-          </div>
-          <div>
-            <label class="block font-medium mb-1">Pointure</label>
-            <div class="flex flex-wrap gap-2">
-              <button class="border px-2 py-1 rounded hover:bg-gray-100">39</button>
-              <button class="border px-2 py-1 rounded hover:bg-gray-100">40</button>
-              <button class="border px-2 py-1 rounded hover:bg-gray-100">41</button>
-            </div>
-          </div>
-        </div>
-      </aside>
-
+      <FilterSection/>
       <!-- Liste des produits -->
       <section class="flex-1">
         <h2 class="text-xl font-semibold mb-6">Chaussures pour Homme</h2>
