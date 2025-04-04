@@ -1,6 +1,6 @@
 <script setup>
 
-import SousCategorySection from '@/components/SousCategorySection.vue'
+import CategoryCard from '@/components/card/CategoryCard.vue'
 import { ref } from 'vue'
 
 const categories = ref([
@@ -33,7 +33,7 @@ const categories = ref([
     <h2 class="text-3xl font-bold mb-8 text-center">Chaussures Homme</h2>
 
     <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      <SousCategorySection v-for="category in categories" :key="category.title"
+      <CategoryCard v-for="category in categories" :key="category.title"
                            :title="category.title"
                            :image="category.image"
                            :description="category.description"

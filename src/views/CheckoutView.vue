@@ -1,7 +1,7 @@
 <script setup>
 
 import SumarizeOrderSection from '@/components/SumarizeOrderSection.vue'
-import CheckoutElementCard from '@/components/CheckoutElementCard.vue'
+import CheckoutElementCard from '@/components/card/CheckoutElementCard.vue'
 import { computed, ref } from 'vue'
 
 const products = ref([

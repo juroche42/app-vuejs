@@ -1,6 +1,6 @@
 <script setup>
 
-import ProductCard from '@/components/ProductCard.vue'
+import ProductCard from '@/components/card/ProductCard.vue'
 
 const products = [
   {
