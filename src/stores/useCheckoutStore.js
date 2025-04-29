@@ -20,11 +20,16 @@ export const useCheckoutStore = defineStore('checkout', () => {
     return products.value.length;
   });
 
+  const getProducts = computed(() => {
+    return products.value;
+  });
+
   return {
     products,
     addProduct,
     removeProduct,
     clearProducts,
-    getProductsLength
+    getProductsLength,
+    getProducts
   }
 });

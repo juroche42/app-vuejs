@@ -1,5 +1,11 @@
 <script setup>
+import { useCheckoutStore } from '@/stores/useCheckoutStore.js'
+
 const props = defineProps({
+  id: {
+    type: String,
+    required: true,
+  },
   title: {
     type: String,
     required: true,
@@ -18,10 +24,11 @@ const props = defineProps({
   },
 })
 
-const emits = defineEmits(['delete-checkout-element'])
+const { removeProduct } = useCheckoutStore()
+
 
 function deleteElement() {
-  emits('delete-checkout-element')
+  removeProduct(props.id)
 }
 </script>
 

@@ -22,13 +22,14 @@ const props = defineProps({
 
 const { addProduct } = useCheckoutStore()
 
-const addProductInCard = () => {
+const addProductInCart = () => {
   const product = {
-    id: 1,
+    id: Math.random().toString(36),
     title: props.title,
     price: props.price,
     description: props.description,
     image: props.image,
+    quantity: 1,
   }
   addProduct(product)
 }
@@ -44,7 +45,7 @@ const addProductInCard = () => {
         <p class="font-bold mt-2">{{ props.price }} €</p>
       </div>
     </a>
-    <button class="bg-blue-600 rounded-2xl px-4 py-2 text-white mb-4" @click="addProductInCard">Ajouter au panier</button>
+    <button class="bg-blue-600 rounded-2xl px-4 py-2 text-white mb-4" @click="addProductInCart">Ajouter au panier</button>
   </div>
 </template>
 
