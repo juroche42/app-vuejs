@@ -9,7 +9,7 @@
       <p class="text-lg text-gray-600 mb-8">
         Découvrez notre sélection de chaussures pour toutes les occasions, avec un style moderne et raffiné.
       </p>
-      <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition">Découvrir la collection</a>
+      <router-link to="#" class="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition">Découvrir la collection</router-link>
     </div>
   </section>
 </template>

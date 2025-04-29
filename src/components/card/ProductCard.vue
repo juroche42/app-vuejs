@@ -37,14 +37,14 @@ const addProductInCart = () => {
 
 <template>
   <div class="border rounded-2xl overflow-hidden shadow hover:shadow-md transition text-center">
-    <a href="/product">
+    <router-link to="/product">
       <img :src="props.image" :alt="props.title" class="w-full h-60 object-cover" />
       <div class="p-4">
         <h4 class="font-semibold text-lg">{{ props.title }}</h4>
         <p class="text-gray-600">{{ props.description }}</p>
         <p class="font-bold mt-2">{{ props.price }} €</p>
       </div>
-    </a>
+    </router-link>
     <button class="bg-blue-600 rounded-2xl px-4 py-2 text-white mb-4" @click="addProductInCart">Ajouter au panier</button>
   </div>
 </template>

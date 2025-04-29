@@ -1,8 +1,12 @@
 <script setup>
 
 import ProductCard from '@/components/card/ProductCard.vue'
+import { useProductsStore } from '@/stores/useProductsStore.js'
 
-const products = [
+
+const {getAllProducts} = useProductsStore()
+console.log(getAllProducts)
+/*const products = [
   {
     title: 'Manteau',
     price: 100,
@@ -27,7 +31,7 @@ const products = [
     description: 'Des bottes robustes',
     image: '/src/assets/logo.svg',
   },
-]
+]*/
 </script>
 
 <template>
@@ -35,7 +39,7 @@ const products = [
     <div class="max-w-7xl mx-auto px-4">
       <h3 class="text-2xl font-semibold mb-8 text-center">Produits en vedette</h3>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          <ProductCard v-for="product in products" :key="product.title"
+          <ProductCard v-for="product in getAllProducts" :key="product.title"
             :title="product.title"
             :price="product.price"
             :description="product.description"
