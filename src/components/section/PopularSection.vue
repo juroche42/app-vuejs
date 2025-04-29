@@ -12,7 +12,7 @@ const products = [
   {
     title: 'Baskets',
     price: 80,
-    description: 'Des baskets confortables pour le quotidien',
+    description: 'Des baskets confortables',
     image: '/src/assets/logo.svg',
   },
   {
@@ -24,7 +24,7 @@ const products = [
   {
     title: 'Bottes',
     price: 120,
-    description: 'Des bottes robustes pour les randonnées',
+    description: 'Des bottes robustes',
     image: '/src/assets/logo.svg',
   },
 ]
