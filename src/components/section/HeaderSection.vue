@@ -5,7 +5,9 @@ const menuItems = [
   { name: 'Nouveautés', link: '/category/new' },
   { name: 'Homme', link: '/categories' },
   { name: 'Femme', link: '/categories' },
-  { name: 'Contact', link: '/' },]
+  { name: 'Contact', link: '/' },
+  { name: 'Panier', link: '/checkout' },
+]
 
 </script>
 

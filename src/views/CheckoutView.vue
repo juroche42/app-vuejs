@@ -8,7 +8,7 @@ const products = ref([
   {
     title: 'Chaussure',
     price: 100,
-    quantity: 1,
+    quantity: 2,
     image: '/src/assets/logo.svg',
   },
   {
